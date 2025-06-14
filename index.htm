@@ -780,61 +780,65 @@
 
 
 
-        <div class="w-full   mx-auto flex flex-row my-20  justify-evenly">
+        <div class="w-full mx-auto flex flex-col md:flex-row md:flex-wrap justify-evenly gap-6 my-20">
 
-            <div class="grid grid-cols-3 md:grid-row-3 gap-x-8  ">
-                <div class="bg-white p-6 rounded-lg mt-4 shadow-xl   text-center">
-                    <p class="text-gray-500">Tamamlandı</p>
-                    <div class="relative w-20 h-20 mx-auto  my-8 flex items-center justify-center">
-                        <div
-                            class="w-full h-full rounded-full border-8 border-green-500 flex items-center justify-center">
-                            <span class="text-xl font-semibold">100%</span>
-                        </div>
-                    </div>
-                    <p class="text-[20px] font-semibold">Sabina G.</p>
-                    <p class="text-gray-500 mt-6 text-[14px]">Designer</p>
+            <!-- Card Container -->
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+              <!-- Card 1 -->
+              <div class="bg-white p-6 rounded-lg w-[250px] shadow-xl text-center">
+                <p class="text-gray-500">Tamamlandı</p>
+                <div class="relative w-20 h-20 mx-auto my-8 flex items-center justify-center">
+                  <div class="w-full h-full rounded-full border-8 border-green-500 flex items-center justify-center">
+                    <span class="text-xl font-semibold">100%</span>
+                  </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg w-[180px] mt-4  text-center shadow-xl">
-                    <p class="text-gray-500">İcradadır</p>
-                    <div class="relative w-20 h-20 mx-auto  my-8">
-                        <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 36 36">
-                            <circle class="text-gray-200 stroke-current" stroke-width="3" fill="none" cx="18" cy="18"
-                                r="16"></circle>
-                            <circle class="text-pink-500 stroke-current" stroke-width="3" fill="none"
-                                stroke-dasharray="60, 10" cx="18" cy="18" r="16"></circle>
-                        </svg>
-                        <span class="absolute inset-0 flex items-center justify-center text-xl font-semibold">90%</span>
-                    </div>
-                    <p class="text-[20px] font-semibold">Fuad M.</p>
-                    <p class="text-gray-500 mt-6 text-[14px]">Frontend Developer</p>
+                <p class="text-[20px] font-semibold">Sabina G.</p>
+                <p class="text-gray-500 mt-6 text-[14px]">Designer</p>
+              </div>
+          
+              <!-- Card 2 -->
+              <div class="bg-white p-6 rounded-lg w-[250px] shadow-xl text-center">
+                <p class="text-gray-500">İcradadır</p>
+                <div class="relative w-20 h-20 mx-auto my-8">
+                  <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 36 36">
+                    <circle class="text-gray-200 stroke-current" stroke-width="3" fill="none" cx="18" cy="18" r="16"></circle>
+                    <circle class="text-pink-500 stroke-current" stroke-width="3" fill="none" stroke-dasharray="60, 10" cx="18" cy="18" r="16"></circle>
+                  </svg>
+                  <span class="absolute inset-0 flex items-center justify-center text-xl font-semibold">90%</span>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-xl w-[180px] mt-4 text-center">
-                    <p class="text-gray-500">İcradadır</p>
-                    <div class="relative w-20 h-20 mx-auto my-8">
-                        <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 36 36">
-                            <circle class="text-gray-200 stroke-current" stroke-width="3" fill="none" cx="18" cy="18"
-                                r="16"></circle>
-                            <circle class="text-pink-500 stroke-current" stroke-width="3" fill="none"
-                                stroke-dasharray="45, 30" cx="18" cy="18" r="16"></circle>
-                        </svg>
-                        <span class="absolute inset-0 flex items-center justify-center text-xl font-semibold">65%</span>
-                    </div>
-                    <p class="text-[20px] font-semibold">Ahmad R.</p>
-                    <p class="text-gray-500 mt-6 text-[14px]">Backend Developer</p>
+                <p class="text-[20px] font-semibold">Fuad M.</p>
+                <p class="text-gray-500 mt-6 text-[14px]">Frontend Developer</p>
+              </div>
+          
+              <!-- Card 3 -->
+              <div class="bg-white p-6 rounded-lg w-[250px] shadow-xl text-center">
+                <p class="text-gray-500">İcradadır</p>
+                <div class="relative w-20 h-20 mx-auto my-8">
+                  <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 36 36">
+                    <circle class="text-gray-200 stroke-current" stroke-width="3" fill="none" cx="18" cy="18" r="16"></circle>
+                    <circle class="text-pink-500 stroke-current" stroke-width="3" fill="none" stroke-dasharray="45, 30" cx="18" cy="18" r="16"></circle>
+                  </svg>
+                  <span class="absolute inset-0 flex items-center justify-center text-xl font-semibold">65%</span>
                 </div>
+                <p class="text-[20px] font-semibold">Ahmad R.</p>
+                <p class="text-gray-500 mt-6 text-[14px]">Backend Developer</p>
+              </div>
             </div>
-
-            <div class=" p-4  rounded-2xl w-full max-w-md">
-                <h2 class="font-bold  text-[25px] text-center leading-[32px] mt-6 ml-14 mb-12 max-w-70">Vebsayt
-                    sifarişinizi izləyin</h2> <input type="text" placeholder="Sifariş kodu"
-                    class="w-full border border-gray-300 p-3  text-center rounded-xl mb-4   text-[16px] outline-none   ">
-                <button
-                    class="w-full shadow-md shadow-purple-400 bg-purple-500 text-white p-3 text-[19px] rounded-xl mb-10  hover:bg-purple-600">
-                    İzlə
-                </button>
-                <p class="text-gray-400 text-center   text-sm">Sayt.az ilə sifarişlərinizə hər zaman nəzarət edin</p>
+          
+            <!-- Track Order Card -->
+            <div class="bg-white p-6 rounded-lg w-[250px] shadow-xl text-center">
+              <h2 class="font-bold text-[22px] leading-[30px] mb-6">Vebsayt sifarişinizi izləyin</h2>
+              <input type="text" placeholder="Sifariş kodu"
+                class="w-full border border-gray-300 p-3 text-center rounded-xl mb-4 text-[16px] outline-none">
+              <button
+                class="w-full shadow-md shadow-purple-400 bg-purple-500 text-white p-3 text-[17px] rounded-xl mb-4 hover:bg-purple-600">
+                İzlə
+              </button>
+              <p class="text-gray-400 text-center text-sm">Sayt.az ilə sifarişlərinizə hər zaman nəzarət edin</p>
             </div>
-        </div>
+          
+          </div>
+          
 
         <div>
             <div class="mt-[18px] mb-[4%]">
@@ -1797,39 +1801,10 @@
                               </div>
                             </div>
                           </div>
-                        <div class="carousel-item  w-full h-100  ">
-                            <div class="flex flex-col justify-center items-center    ">
-                              <div class="flex flex-col justify-center items-center">
-                                <h4 class="text-[#4a2182] text-xl">Müştərilərdən müsbət rəy</h4> 
-                                <p class="text-[#64748b] text-md mt-5">Veb saytımı hazırlamaq üçün Sayt.az-ı seçmək biznesim üçün verdiyim ən yaxşı qərar idi.</p>
-                              </div>
-                              <div class="flex flex-row justify-center items-center gap-5">
-                                <img class="w-13 h-13 rounded-full" src="img/swipe1.png" alt="Hikmat Taghiyev">
-                                <div class="flex flex-col justify-center items-start">
-                                  <p class="text-[#334155] text-md font-semibold">Hikmat Taghiyev</p>
-                                  <p class="text-[#64748b] text-md">Accountant</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="carousel-item swiper-slide items-center h-100  ">
-                            <div class="flex flex-col  justify-items-center  ">
-                              <div class="flex flex-col justify-center items-center">
-                                <h4 class="text-[#4a2182] mt-10 text-xl">Müştərilərdən müsbət rəy</h4> 
-                                <p class="text-[#64748b] text-md mt-5">Veb saytımı hazırlamaq üçün Sayt.az-ı seçmək biznesim üçün verdiyim ən yaxşı qərar idi.</p>
-                              </div>
-                              <div class="flex flex-row justify-center items-center gap-5">
-                                <img class="w-13 h-13 rounded-full mb-10"  src="img/swipe1.png" alt="Hikmat Taghiyev">
-                                <div class="flex flex-col justify-center items-start">
-                                  <p class="text-[#334155] text-md font-semibold">Hikmat Taghiyev</p>
-                                  <p class="text-[#64748b] text-md">Accountant</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                     
+                     
                         
-                        
-                        <div class="swiper-slide">Slide 9</div>
+                    
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -1909,11 +1884,11 @@
 
 
     </main>
-    <footer class="bg-gray-200 text-gray-800 py-6">
-        <section class="bg-[#FAF4FF] w-full mx-auto border-t-[1px] mt-12 border-slate-200 border-solid text-mainLightPurpleText"  >
+    <footer class="bg-gray-200 text-gray-800 w-full flex-col md:flex-row mx-auto py-6">
+        <section class="bg-[#FAF4FF] w-full mx-auto border-t-[1px] mt-12   border-slate-200 border-solid  text-mainLightPurpleText"  >
             <h2 id="footer-heading" class="sr-only">Footer</h2>
-            <div class="flex-row gap-[30px] lmd:flex-row mx-auto max-w-[100%]  flex lmd:items-center justify-between lg:gap-[61px] lg:py-20 md:py-10 py-6 p-2">
-                <div class="flex flex-col lmd:w-1/2">
+            <div class="flex-row gap-[30px]  lmd:flex-row mx-auto max-w-[100%]  flex lmd:items-center justify-between lg:gap-[61px] lg:py-20 md:py-10 py-6  ">
+                <div class="flex flex-col  lmd:w-1/2">
                     <div class="pt-[72px] md:pt-0 flex flex-col gap-8 md:items-start"><a class="-m-1.5 p-1.5 min-w-[70px]" href="/"><span class="sr-only">Your Company</span><img alt="logo" fetchpriority="high" width="200" height="200" decoding="async" data-nimg="1" class="hidden" style="color:transparent" src="/icons/websiteca.svg"><img alt="logo" fetchpriority="high" width="200" height="200" decoding="async" data-nimg="1" class="" style="color:transparent" src="/icons/saytaz.svg"></a>
                         <p
                         class="text-base md:text-sm text-mainLightPurpleText leading-6 max-w-[456px] md:max-h-[130px] mb-10">Sayt.az - Web saytların hazırlanması, Domain, Hosting satışı, SEO, SMM və texniki xidmətlər təklif edir.</p>
@@ -1947,8 +1922,8 @@
                             </div>
                     </div>
                 </div>
-                <div class="flex gap-16 lmd:w-1/2">
-                    <div class="flex-col md:flex-row gap-12 flex lg:gap-[61px] ">
+                <div class="flex gap-16   ">
+                    <div class="flex-col md:flex-row  gap-12 flex  lg:gap-[61px] ">
                         <div class="">
                             <ul role="list" class="space-y-4 w-full">
                                 <li class="mb-0 md:mb-8 text-mainDarkPurple font-bold sm:text-2xl text-lg uppercase">Hostinq &amp; Domen</li>
